@@ -4,7 +4,7 @@ setup(
     name='ufo101TamingTransformers',
     version='0.0.1',
     description='Taming Transformers for High-Resolution Image Synthesis',
-    packages=['ufo101TamingTransformers'],
+    packages=['taming'],
     install_requires=[
         'torch',
         'numpy',
