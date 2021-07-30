@@ -269,7 +269,7 @@ class CodeGPT(nn.Module):
         position_embeddings = self.pos_emb[:, :t, :] # each position maps to a (learnable) vector
         x = self.drop(token_embeddings + position_embeddings)
         x = self.blocks(x)
-        x = self.taming_cinln_f(x)
+        x = self.ufo101TamingTransformers_cinln_f(x)
         logits = self.head(x)
 
         # if we are given some desired targets also calculate the loss
