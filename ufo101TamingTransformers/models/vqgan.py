@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 import pytorch_lightning as pl
 
-from main import instantiate_from_config
+from ufo101TamingTransformers.main.main import instantiate_from_config
 
 from ufo101TamingTransformers.modules.diffusionmodules.model import Encoder, Decoder
 from ufo101TamingTransformers.modules.vqvae.quantize import VectorQuantizer2 as VectorQuantizer
