@@ -1,4 +1,4 @@
 einops
 torch
-pytorch-lightning
-torchvision
+numpy
+tqdm
