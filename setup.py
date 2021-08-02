@@ -6,8 +6,9 @@ setup(
     description='Taming Transformers for High-Resolution Image Synthesis',
     packages=find_packages(include=['ufo101TamingTransformers', 'ufo101TamingTransformers.*']),
     install_requires=[
-        'torch',
-        'numpy',
-        'tqdm',
+        str(r)
+        for r in pkg_resources.parse_requirements(
+            open(os.path.join(os.path.dirname(__file__), "requirements.txt"))
+        )
     ],
 )
